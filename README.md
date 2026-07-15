@@ -1,18 +1,63 @@
 # База знаний
 > Это несколько независимых примеров работы с документированием для компании Яндекс.
 
-1. [TTHotel](#tthotel)
+1. [TTHotel](#tthotel) [^1]
     - [Блокировка карт доступа](#блокировка-карт-доступа)
-
-</a>
-2. DND
+    - [Восстановление заблокированных карт доступа](#восстановление-заблокированных-карт-доступа)
+[^1]: Инструкция была написана для людей обладающих низким уровнем компьютерной грамотности
+2. [DND](#) <!--Возможно напишу доку к ним-->
 3. Grandstream
+    - [Прошивка телефонов на актуальную версию](#)
+    - [Прошивка с надстройками кодом]
 
-   
-##Grandstream
-sdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlassssssssssssssssssssssssssssssdasdlsadklsaldsaldlsdlsaldaldkalsdlsaldsaldlasssssssssssssssssssssssssssss
 ## TTHotel
 ### Блокировка карт доступа
+> [!IMPORTANT]
+> Блокировка карты приведет к ограничению доступа к **замкам** и **секторам** присвоенным данной карте. Восстановление карты доступа займет от 5 минут до 15 мин, учитывайте это исходя из рабочей нагрузки
+1. Переходим на главное окно *Консоль*, выбрав нужный корпус в окне *Консоль* находим номер к которому необходимо заблокировать доступ.
+
+<img width="1506" height="950" alt="image" src="https://github.com/user-attachments/assets/45690765-c494-43b4-a1f3-9bac886d95ce" />
+
+2. Левой кнопкой мыши (далее ЛКМ) взаимодействуем с областью найденного номера. Открылся выпадающий список, в нем находим пункт *Разрешение на доступ* и взаимодействуем с ним с помощью ЛКМ.
+
+<img width="510" height="521" alt="image" src="https://github.com/user-attachments/assets/cf553af6-00ab-4923-bbde-13eb0f463c49" />
+
+3. Открылось окно *Разрешение на доступ*. В нем мы увидим таблицу с колонками из которых нам интересны колонки:
+    - *Гость* – в котором написана информация о госте
+    - *Статус* – состояние ключа такие как (Используется, Скоро просрочится, Аннулирована и т.п)
+    - *Доступы* – информация о помещениях в которые доступен вход
+    - *Срок действия* – дата с какого и по какое карта будет открывать замки в колонке доступы
+    - *Параметры* – функции для сообщения об утерянной карте.
+    
+    По данным в строке находим карту доступа, которую хотим заблокировать.
+
+<img width="1110" height="988" alt="image" src="https://github.com/user-attachments/assets/fd3819e6-d44b-4489-b457-cda993b3ca2b" />
+      
+4. В колонке *Параметры* для карты, которую хотим заблокировать, ЛКМ Взаимодействуем с ссылкой *Пометить как утерянную*.
+
+>[!WARNING]
+   > Теперь система знает о том что карта утеряна, далее нужно сообщить об этом замкам. Если передумали блокировать карту, нажмите на ссылку *Остановить сообщение* (Сработает если не передали замкам информацию о том что карта заблокирована см. следующий шаг)
+
+<img width="1072" height="849" alt="image" src="https://github.com/user-attachments/assets/622e3808-0e03-45fc-819f-76bb4f864a16" />
+
+5. Взаимодействуем с ссылкой *Удаленный отчет об утере* ЛКМ
+
+   > После чего откроется окно где шлюз попытается связаться с замком удаленно и сообщить об утерянной карте. Зеленая галочка на против замка – отчет отправлен успешно. Красный крестик – ошибка при отправке отчета.
+
+<img width="636" height="475" alt="image" src="https://github.com/user-attachments/assets/192ea5b6-4770-4088-8e34-5cb0bf204ec1" />
+
+> [!NOTE]
+> Если удаленный отчет об утере вышал ошибку то необходимо сообщить замку напрямую используя приложение TTHotel на рабочем телефоне находясь при этом рядом с замком.
+
+
+
+
+
+
+
+
+
+### Восстановление заблокированных карт доступа
 
 
 
